@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Updock&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      body {
+        background-image: url(image\ copy.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      #log {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+      }
+      #log h1 {
+        font-family: "Itim", cursive;
+        font-size: 45px;
+        margin: 15px 0px 10px 0px;
+      }
+      #log form {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 430px;
+        height: 340px;
+        border-radius: 30px;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.405);
+      }
+      #log form input {
+        padding: 15px 70px 15px 25px;
+        border-radius: 30px;
+        margin: 0px 0px 10px 10px;
+        transition: all 0.4s;
+      }
+      #log input:hover {
+        box-shadow: 0px 0px 10px black;
+      }
+      #log i {
+        font-size: 35px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 4px;
+        margin-bottom: 10px;
+      }
+      #text,
+      #pass {
+        display: flex;
+        align-items: center;
+      }
+      #link {
+        display: flex;
+      }
+      #link a {
+        margin: 20px 3px 0px 3px;
+        color: black;
+        transition: all 0.4s;
+      }
+      #link a:hover {
+        color: rgb(0, 163, 163);
+      }
+      #log form #sub {
+        position: absolute;
+        bottom: 0px;
+      }
+
+      #log form #sub input {
+        padding: 15px 35px 15px 35px;
+      }
+      #next {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+      }
+      #next a {
+        color: black;
+        transition: all 0.4s;
+      }
+      #next a:hover {
+        color: rgb(255, 255, 255);
+      }
+      #out {
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        border: 2px solid black;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.405);
+      }
+      #out i,
+      span {
+        color: rgb(0, 0, 0);
+        font-family: "Itim", cursive;
+      }
+      #out span {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="log">
+      <form action="">
+        <h1>ĐĂNG NHẬP</h1>
+        <div id="text">
+          <i class="bx bx-user-circle"></i>
+          <input
+            type="text"
+            name=""
+            id=""
+            maxlength="18"
+            minlength="6"
+            placeholder="Nhập tên của bạn"
+          />
+        </div>
+
+        <div id="pass">
+          <i class="bx bx-lock-alt"></i>
+          <input
+            type="password"
+            name=""
+            id=""
+            maxlength="18"
+            minlength="6"
+            placeholder="Nhập mật khẩu"
+          />
+        </div>
+
+        <div id="link">
+          <a
+            href="https://accounts.google.com/SignOutOptions?hl=vi&continue=https://myaccount.google.com/%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GBRAwAE"
+            target="_blank"
+            ><i class="bx bxl-google"></i> </a
+          ><a
+            href="https://www.bing.com/ck/a?!&&p=3d5351a107d687ee8c4bb11c40e4fbc8777a663c111ab143b9da3e01f70539bdJmltdHM9MTczMDQxOTIwMA&ptn=3&ver=2&hsh=4&fclid=37518a28-904b-6250-2b6f-9e84914363bb&psq=link+%c4%91%c4%83ng+nh%e1%ba%adp+facebook&u=a1aHR0cHM6Ly92aS12bi5mYWNlYm9vay5jb20vaW5kZXgucGhwLw&ntb=1"
+            target="_blank"
+            ><i class="bx bxl-meta"></i>
+          </a>
+          <a
+            href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL%20openid%20profile%20offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=6ef83164-79c0-43e9-b687-d868d90268de&x-client-SKU=MSAL.Desktop&x-client-Ver=4.61.3.0&x-client-OS=Windows%20Server%202019%20Datacenter&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBybZDMAAA0H_p1oKSGpaGDkSFU9WmOyRN1fQMjfD1797daalEl5kdk4ukTl5KLv2U2agl7mlgyOdhwZiglGwEiwJ1tqLd3woNHq4qL_upKJNDHLbsqXMVNf1a3lN2HGL8pOZE5yhzbl4-3HMf4CZJUC32paDMR_VNWoYigyCUPQFA56TlCjirNtvSq_Bd-3-JR80IT_xl81lww0ENjMdq-ODHdIJCB3bVInpmkkWBfEWp8rrOET-FVT02ycuomeZvg5K2j9gyCvmbBVDvV8VnSMFQgtZBAsQ980VQA2VQpwbIGUENcY_XyJY-Qjvc0lYls29wdAm6bGvHfoCadWotHFihBnXm5D9hjm5tfzdso173Pxn4IZcYWI01soZT-VzVaMXF5X6umsgtsjexf-QW9csXnrk3OcLzQh6Nu39pxbOdggEAAA&msaoauth2=true&lc=1066&ru=https%3A%2F%2Faccount.microsoft.com%2Faccount%2FAccount%3Fmkt%3Dvi-VN"
+            target="_blank"
+            ><i class="bx bxl-windows"></i
+          ></a>
+          <a href="https://account.apple.com/sign-in" target="_blank"
+            ><i class="bx bxl-apple"></i
+          ></a>
+        </div>
+
+        <div id="sub">
+          <input type="submit" value="Đăng Nhập" />
+        </div>
+
+        <div id="next">
+          <a href="login2.html"><i class="bx bx-transfer-alt"></i></a>
+        </div>
+      </form>
+    </div>
+    <div id="out">
+      <a href="index.html"
+        ><i class="bx bx-arrow-back"><span>back</span> </i></a
+      >
+    </div>
+  </body>
+</html>

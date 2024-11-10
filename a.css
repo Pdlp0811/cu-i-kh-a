@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.79);
+  display: flex;
+  padding: 7px 0;
+  border-radius: 15px;
+}
+#logo {
+  margin-left: 20px;
+}
+#logo h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+}
+#logo span {
+  color: aqua;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+#home a,
+#login a {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+#home a i span,
+#login a i span {
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+#home span {
+  margin-right: 55px;
+}
+
+#login {
+  display: flex;
+}
+#login i {
+  font-size: 45px;
+  margin: 0 5px;
+}
