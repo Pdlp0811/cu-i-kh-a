@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: rgba(0, 0, 0, 0.79);
+        display: flex;
+        padding: 7px 0;
+        border-radius: 15px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      #logo {
+        margin-left: 20px;
+        position: static;
+      }
+      #logo h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+      }
+      #logo span {
+        color: aqua;
+        font-family: "Caveat", cursive;
+        font-size: 20px;
+      }
+      .wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 20px;
+      }
+
+      #home a,
+      #login a {
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+      }
+      #home a i span,
+      #login a i span {
+        font-family: "Caveat", cursive;
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+      }
+
+      #home {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+      }
+      #home span {
+        margin-right: 55px;
+      }
+
+      #login {
+        display: flex;
+      }
+      #login i {
+        font-size: 45px;
+        margin: 0 5px;
+      }
+
+      #back {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 140px;
+        left: 40px;
+        border: 2px solid black;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.405);
+        transition: all 0.3s;
+        position: fixed;
+      }
+      #back i,
+      span {
+        color: rgb(0, 0, 0);
+        font-family: "Itim", cursive;
+      }
+      #back span {
+        font-weight: 600;
+      }
+      #back:hover {
+        background-color: rgba(0, 0, 0, 0.405);
+        color: aliceblue;
+        border: 2px solid white;
+      }
+      #back:hover a i span {
+        color: aliceblue;
+      }
+      #back:hover a i {
+        color: aliceblue;
+      }
+
+      #main span {
+        flex-wrap: wrap;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+      }
+      #main div {
+        display: flex;
+        justify-content: center;
+      }
+      #main img {
+        height: 500px;
+        border-radius: 30px;
+      }
+      #main h1 {
+        display: flex;
+        justify-content: center;
+        margin: 220px 0 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <h1>Travell</h1>
+        <span>COLOR CYAN</span>
+      </div>
+      <div class="wrapper">
+        <div id="home">
+          <a href=""
+            ><i class="bx bx-home-alt"><span>trang chủ</span></i></a
+          >
+          <a href=""
+            ><i class="bx bx-info-circle"><span>giới thiệu</span></i></a
+          >
+          <a href=""
+            ><i class="bx bxs-cart-add"><span>giỏ hàng</span></i></a
+          >
+          <a href="mes.html"
+            ><i class="bx bx-message-square-dots"><span>liên hệ</span></i></a
+          >
+        </div>
+
+        <div id="login">
+          <a href=""> <i class="bx bx-cog"></i></a>
+          <a href="login2.html"><i class="bx bx-log-in"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div id="back">
+      <a href="index.html">
+        <i class="bx bx-minus-back"><span>back</span></i></a
+      >
+    </div>
+    <div id="main">
+      <h1>Provence-Pháp</h1>
+      <span
+        >Provence là một vùng đất nằm ở miền đông nam nước Pháp, nổi tiếng với
+        các cánh đồng hoa oải hương, những ngôi làng cổ kính, và phong cảnh
+        tuyệt đẹp. Đây là một trong những điểm đến du lịch nổi tiếng nhất của
+        Pháp.
+      </span>
+      <div>
+        <img
+          src="https://th.bing.com/th/id/R.f9da2600070d2f5f07166949127b6a0d?rik=BN84zyCW1alKJQ&riu=http%3a%2f%2fdulichchauau.org%2fview%2fadmin%2fThemes%2fkcfinder%2fupload%2fimages%2fdanhmucquocgia%2fphap%2fprovence%2fcanh-dong-hoa-oai-huong-mixtourist.jpg&ehk=7xIX9qqeUxHN6Vg9GN1nvdnFc4hiCGK3AJYrlry6LE8%3d&risl=&pid=ImgRaw&r=0"
+          alt=""
+        />
+      </div>
+      <span
+        >Provence có lịch sử lâu đời, từ thời kỳ La Mã với các di tích như Nhà
+        hát La Mã ở Orange và Aqueduc Pont du Gard. Vùng đất này đã từng là nơi
+        sinh sống của nhiều nghệ sĩ nổi tiếng như Van Gogh và Cézanne, những
+        người đã tìm thấy cảm hứng từ cảnh quan và ánh sáng đặc biệt của nơi
+        đây. Các cánh đồng hoa oải hương ở Provence là một trong những hình ảnh
+        mang tính biểu tượng nhất của vùng này. Mùa hoa oải hương nở rộ từ tháng
+        6 đến tháng 8, tạo nên một bức tranh thiên nhiên màu tím rực rỡ, thu hút
+        hàng nghìn du khách đến tham quan và chụp ảnh.</span
+      >
+      <div>
+        <img
+          src="https://th.bing.com/th/id/R.8950d9ab2052809e0cb371f159823c1a?rik=a2A445lf3tZSfg&pid=ImgRaw&r=0"
+          alt=""
+        />
+      </div>
+      <span
+        >Provence cũng nổi tiếng với ẩm thực độc đáo và ngon miệng. Các món ăn
+        đặc sản như ratatouille, bouillabaisse và pissaladière đều mang đậm
+        hương vị của vùng Địa Trung Hải, kết hợp với các loại thảo mộc và rau củ
+        tươi ngon. Cảnh quan thiên nhiên của Provence rất đa dạng, từ những ngọn
+        núi cao của dãy Alps đến bờ biển cát trắng của Côte d'Azur. Đây cũng là
+        một điểm đến lý tưởng cho những ai yêu thích các hoạt động ngoài trời
+        như leo núi, đạp xe, và tắm biển.</span
+      >
+      <div>
+        <img
+          src="https://khamphadisan.com.vn/wp-content/uploads/2018/12/du-lich-provence-phap-khamphadisan-nen.jpg"
+          alt=""
+        />
+      </div>
+      <span
+        >Ngoài ra, Provence còn có nhiều sự kiện và lễ hội đặc sắc diễn ra quanh
+        năm, như Lễ hội Hoa oải hương ở Valensole và Lễ hội Rượu vang ở
+        Châteauneuf-du-Pape, mang đến cho du khách những trải nghiệm văn hóa độc
+        đáo và phong phú. Provence dễ dàng tiếp cận bằng tàu hỏa từ Paris và các
+        thành phố lớn khác ở Pháp. Vùng này cũng có nhiều lựa chọn lưu trú từ
+        các khách sạn sang trọng đến các nhà nghỉ ấm cúng, phù hợp với mọi ngân
+        sách.
+      </span>
+
+      <div>
+        <img
+          src="https://th.bing.com/th/id/OIP.zJBj-Yb864artV1XU_SLSAHaLZ?rs=1&pid=ImgDetMain"
+          alt=""
+        />
+      </div>
+
+      <span>
+        là một điểm đến không thể bỏ qua với những ai muốn tận hưởng sự kết hợp
+        giữa thiên nhiên tươi đẹp, lịch sử phong phú và văn hóa đa dạng của miền
+        nam nước Pháp. 🌸🍷🌞</span
+      >
+    </div>
+  </body>
+</html>

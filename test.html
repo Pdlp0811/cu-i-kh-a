@@ -23,12 +23,77 @@
     ></script>
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: rgba(0, 0, 0, 0.79);
+        display: flex;
+        padding: 7px 0;
+        border-radius: 15px;
+      }
+      #logo {
+        margin-left: 20px;
+        position: static;
+      }
+      #logo h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+      }
+      #logo span {
+        color: aqua;
+        font-family: "Caveat", cursive;
+        font-size: 20px;
+      }
+      .wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 20px;
+      }
+
+      #home a,
+      #login a {
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+      }
+      #home a i span,
+      #login a i span {
+        font-family: "Caveat", cursive;
+        font-size: 45px;
+      }
+
+      #home {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+      }
+      #home span {
+        margin-right: 55px;
+      }
+
+      #login {
+        display: flex;
+      }
+      #login i {
+        font-size: 45px;
+        margin: 0 5px;
+      }
       #main {
         position: relative;
       }
 
       #main img {
         height: 900px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
       }
       .d-md-block {
         font-size: 20px;
@@ -38,6 +103,10 @@
         border-radius: 30px;
         width: 1000px;
       }
+      /* #about .d-md-block {
+        display: flex;
+        justify-content: center;
+      } */
       .d-md-block .sb1 h1,
       .sb2 h1,
       .sb3 h1 {
@@ -82,18 +151,6 @@
         bottom: 0;
         text-decoration: none;
         padding: 10px;
-        transition: all 0.3s;
-      }
-      .d-md-block .cost:hover a {
-        background-color: rgb(0, 0, 0);
-
-        border: 2px solid white;
-      }
-      .d-md-block .cost:hover a i {
-        color: rgb(255, 255, 255);
-      }
-      .d-md-block .cost:hover a p {
-        color: rgb(255, 255, 255);
       }
       .d-md-block .cost a i {
         color: black;
@@ -103,6 +160,82 @@
       .d-md-block .cost a p {
         color: black;
         margin: 0 10px;
+      }
+
+      #sale .sale1 {
+        display: flex;
+        align-items: center;
+        margin: 30px 0 30px 30px;
+      }
+      #sale .sale1 i {
+        font-size: 45px;
+      }
+
+      .hot1 {
+        display: flex;
+        align-items: center;
+        margin: 30px 0 30px 30px;
+      }
+      .hot1 i {
+        font-size: 45px;
+        color: rgb(247, 3, 3);
+        margin-right: 10px;
+      }
+      .hot2 {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        height: 450px;
+        flex-wrap: wrap;
+      }
+      .hot2 .hot3 {
+        border: 2px solid black;
+        border-radius: 25px;
+        background: linear-gradient(rgb(0, 0, 0), rgb(225, 225, 225));
+        transition: all 0.3s;
+        position: relative;
+      }
+      .hot3:hover {
+        box-shadow: 0px 0px 15px;
+        transform: scale(1.02, 1.02);
+      }
+      .hot2 .hot3 img {
+        width: 350px;
+        height: 235px;
+        border-radius: 25px;
+      }
+
+      .hot3 a {
+        text-decoration: none;
+        color: black;
+      }
+      .hot3 a h2 {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      .hot3 a div {
+        display: flex;
+        justify-content: center;
+      }
+      .hot3 a div p {
+        background-color: aliceblue;
+        margin: 10px 5px 0 5px;
+        padding: 0 5px;
+      }
+      .hot3 .cost p {
+        font-weight: 640;
+        font-size: 20px;
+        margin-left: 35px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+      }
+      .hot3 .cost p i {
+        font-size: 30px;
+        color: rgb(0, 116, 8);
+        margin-right: 5px;
       }
     </style>
   </head>
@@ -170,52 +303,54 @@
               class="d-block w-100"
               alt=""
             />
-
-            <div class="carousel-caption d-none d-md-block">
-              <div class="sb1">
-                <div>
-                  <i class="bx bxs-buildings"></i>
-                  <h1>City of London</h1>
+            <div id="about">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="sb1">
+                  <div>
+                    <i class="bx bxs-buildings"></i>
+                    <h1>City of London</h1>
+                  </div>
+                  <div>
+                    <i class="bx bx-map"></i>
+                    <h1>UK</h1>
+                  </div>
                 </div>
-                <div>
-                  <i class="bx bx-map"></i>
-                  <h1>UK</h1>
-                </div>
-              </div>
-              <div class="cost">
-                <i class="bx bx-money-withdraw"></i>
-                <p>Giá vé : 8.300.000-24.600.000 VND/vé</p>
-                <div>
-                  <a href=""
-                    ><i class="bx bx-info-circle"></i>
-                    <p>thông tin</p></a
-                  >
+                <div class="cost">
+                  <i class="bx bx-money-withdraw"></i>
+                  <p>Giá vé : 8.300.000-24.600.000 VND/vé</p>
+                  <div>
+                    <a href=""
+                      ><i class="bx bx-info-circle"></i>
+                      <p>thông tin</p></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <img src="opera-house-uc.jpg" class="d-block w-100" alt="" />
-
-            <div class="carousel-caption d-none d-md-block">
-              <div class="sb2">
-                <div>
-                  <i class="bx bxs-music"></i>
-                  <h1>Opera Sydney</h1>
+            <div id="about">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="sb2">
+                  <div>
+                    <i class="bx bxs-music"></i>
+                    <h1>Opera Sydney</h1>
+                  </div>
+                  <div>
+                    <i class="bx bx-map"></i>
+                    <h1>Australia</h1>
+                  </div>
                 </div>
-                <div>
-                  <i class="bx bx-map"></i>
-                  <h1>Australia</h1>
-                </div>
-              </div>
-              <div class="cost">
-                <i class="bx bx-money-withdraw"></i>
-                <p>Giá vé : 4.436.000-13.577.000±900.000 VNĐ/vé</p>
-                <div>
-                  <a href=""
-                    ><i class="bx bx-info-circle"></i>
-                    <p>thông tin</p></a
-                  >
+                <div class="cost">
+                  <i class="bx bx-money-withdraw"></i>
+                  <p>Giá vé : 4.436.000-13.577.000±900.000 VNĐ/vé</p>
+                  <div>
+                    <a href=""
+                      ><i class="bx bx-info-circle"></i>
+                      <p>thông tin</p></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -226,26 +361,27 @@
               class="d-block w-100"
               alt=""
             />
-
-            <div class="carousel-caption d-none d-md-block">
-              <div class="sb3">
-                <div>
-                  <i class="bx bxs-flag"></i>
-                  <h1>Mount Everest</h1>
+            <div id="about">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="sb3">
+                  <div>
+                    <i class="bx bxs-flag"></i>
+                    <h1>Mount Everest</h1>
+                  </div>
+                  <div>
+                    <i class="bx bx-map"></i>
+                    <h1>Mountain in the Himalayas</h1>
+                  </div>
                 </div>
-                <div>
-                  <i class="bx bx-map"></i>
-                  <h1>Mountain in the Himalayas</h1>
-                </div>
-              </div>
-              <div class="cost">
-                <i class="bx bx-money-withdraw"></i>
-                <p>Giá vé : 1.7-4.6±0.4 tỉ VND</p>
-                <div>
-                  <a href=""
-                    ><i class="bx bx-info-circle"></i>
-                    <p>thông tin</p></a
-                  >
+                <div class="cost">
+                  <i class="bx bx-money-withdraw"></i>
+                  <p>Giá vé : 1.7-4.6±0.4 tỉ VND</p>
+                  <div>
+                    <a href=""
+                      ><i class="bx bx-info-circle"></i>
+                      <p>thông tin</p></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -322,7 +458,7 @@
           </div>
         </div>
         <div class="hot3">
-          <a href="saturnia.html"
+          <a href=""
             ><img src="dia-diem-Saturnia.jpg" alt="" />
             <h2>Saturnia-Ý</h2>
             <div>
@@ -335,7 +471,7 @@
           </div>
         </div>
         <div class="hot3">
-          <a href="provence.html"
+          <a href=""
             ><img
               src="https://www.elle.vn/wp-content/uploads/2020/09/22/417360/dia-diem-o-phap.jpg"
               alt=""
