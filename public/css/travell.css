@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.525);
+  display: flex;
+  padding: 7px 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  border-radius: 0;
+}
+
+#logo {
+  margin-left: 20px;
+}
+#logo h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+}
+#logo span {
+  color: aqua;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+#wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+#wrapper a i,
+a span {
+  transition: all 0.2s;
+  color: aliceblue;
+}
+#wrapper i:hover,
+a:hover span {
+  color: black;
+}
+
+#wrapper .search1 button {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#wrapper .search1 button:hover {
+  background-color: rgb(186, 255, 255);
+}
+
+#login {
+  position: relative;
+}
+.sidebar {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.525);
+  color: rgb(255, 255, 255);
+  width: 300px;
+  height: 200px;
+  opacity: 0;
+  transition: all 0.4s;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-left: 175px;
+  top: 77px;
+}
+.side {
+  display: block;
+  opacity: 1;
+  margin-left: -225px;
+}
+.search {
+  position: relative;
+}
+.search1 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.534);
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 40px;
+}
+.search1 i {
+  font-size: 35px;
+  color: rgb(255, 252, 252);
+}
+.search1 input {
+  margin: 0 3px 0 10px;
+  position: relative;
+}
+
+.search1 button,
+input {
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 5px 5px;
+  border: none;
+}
+#login button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+#home a,
+#login i {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+#home a i span,
+#login a i span {
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+#home span {
+  margin-right: 55px;
+}
+
+#login {
+  display: flex;
+}
+#login i {
+  font-size: 45px;
+  margin: 0 5px;
+}
+
+#back {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.405);
+  transition: all 0.3s;
+  position: fixed;
+}
+#back i,
+span {
+  color: rgb(0, 0, 0);
+  font-family: "Itim", cursive;
+}
+#back span {
+  font-weight: 600;
+}
+#back:hover {
+  background-color: rgba(0, 0, 0, 0.405);
+  color: aliceblue;
+  border: 2px solid white;
+}
+#back:hover a i span {
+  color: aliceblue;
+}
+#back:hover a i {
+  color: aliceblue;
+}
+
+#main span {
+  flex-wrap: wrap;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+#main div {
+  display: flex;
+  justify-content: center;
+}
+#main img {
+  height: 500px;
+  border-radius: 30px;
+}
+#main h1 {
+  display: flex;
+  justify-content: center;
+  margin: 220px 0 50px 0;
+}
+#menu {
+  display: none;
+}
+
+@media (max-width: 970px) {
+  #logo {
+    margin-left: 10px;
+  }
+  #logo h1 {
+    font-size: 35px;
+  }
+  #logo span {
+    font-size: 15px;
+  }
+  #wrapper {
+    margin: 0 10px;
+  }
+
+  .search1 {
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+  }
+  .search1 i {
+    font-size: 25px;
+  }
+  .search1 input {
+    margin: 0 3px;
+    padding: 3px 3px;
+    width: 100px;
+  }
+  .search1 button {
+    height: 30px;
+  }
+  .search1 button,
+  input {
+    font-size: 9px;
+    border-radius: 5px;
+    padding: 2px 2px;
+    border: none;
+  }
+
+  #wrapper .search1 {
+    display: flex;
+    align-items: center;
+  }
+  #home a,
+  #login i {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+  }
+  #menu button {
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  #menu i {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+  }
+
+  .menu2 a {
+    margin: 15px 0;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+  }
+  .menu2 a i {
+    transition: all 0.3s;
+  }
+  .menu2 a:hover i {
+    color: black;
+    margin: 0 10px;
+  }
+  .menu2 span {
+    font-family: "Caveat", cursive;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+  }
+  .menu2 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    position: absolute;
+    left: -190px;
+    background-color: rgba(0, 0, 0, 0.525);
+    top: 70px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all 0.4s;
+    opacity: 0;
+    margin-left: 245px;
+  }
+  .menu3 {
+    opacity: 1;
+    margin-left: -5px;
+  }
+}

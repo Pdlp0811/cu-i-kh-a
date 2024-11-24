@@ -4,113 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Updock&display=swap");
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+
       body {
-        background-image: url(/ảnh/register-image.png);
-        background-repeat: no-repeat;
+        background-image: url("/images/login-image.png");
         background-size: 100%;
+        background-repeat: no-repeat;
       }
-      #login h1 {
-        font-family: "Itim", cursive;
-        font-size: 45px;
-        margin: 15px 0px 5px 0px;
-      }
-      #login {
+
+      #log {
         display: flex;
         justify-content: center;
-        margin-top: 9%;
+        margin-top: 15%;
       }
-      #login form {
+
+      #log h1 {
+        font-family: "Itim", cursive;
+        font-size: 45px;
+        margin: 15px 0px 10px 0px;
+      }
+
+      #log form {
         border: 2px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
         width: 430px;
-        height: 520px;
+        height: 340px;
         border-radius: 30px;
+        position: relative;
         background-color: rgba(255, 255, 255, 0.405);
       }
-      #login form #sub {
-        position: absolute;
-        bottom: 10px;
-      }
 
-      #login form #sub input {
-        padding: 15px 35px 15px 35px;
-      }
-      #login i {
-        font-size: 35px;
-        border: 2px solid black;
-        padding: 4px;
-        border-radius: 10px;
-      }
-      #login input {
+      #log form input {
         padding: 15px 70px 15px 25px;
-        margin-left: 10px;
         border-radius: 30px;
+        margin: 0px 0px 10px 10px;
         transition: all 0.4s;
       }
-      #login input:hover {
+
+      #log input:hover {
         box-shadow: 0px 0px 10px black;
       }
-      #login div {
-        margin-top: 10px;
+
+      #log i {
+        font-size: 35px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 4px;
+        margin-bottom: 10px;
       }
-      #birth input {
-        padding: 15px 122px 15px 25px;
-      }
-      #name,
-      #email,
-      #pass1,
-      #pass2,
-      #birth {
+
+      #text,
+      #pass {
         display: flex;
         align-items: center;
       }
+
       #link {
         display: flex;
       }
+
       #link a {
         margin: 20px 3px 0px 3px;
         color: black;
         transition: all 0.4s;
       }
+
       #link a:hover {
         color: rgb(0, 163, 163);
       }
-      #next {
+
+      #log form #sub {
         position: absolute;
-        bottom: 10px;
-        right: 10px;
-      }
-      #next a {
-        color: rgb(0, 0, 0);
-        transition: all 0.4s;
-      }
-      #next:hover a {
-        color: rgb(255, 255, 255);
-      }
-      #danger a i {
-        font-size: 50px;
-        color: aliceblue;
-        margin-left: 10px;
+        bottom: 0px;
       }
 
-      #out1 {
+      #log form #sub input {
+        padding: 15px 35px 15px 35px;
+      }
+
+      #next {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+      }
+
+      #next a {
+        color: black;
+        transition: all 0.4s;
+      }
+
+      #next a:hover {
+        color: rgb(255, 255, 255);
+      }
+
+      #out {
         font-size: 50px;
         display: flex;
         align-items: center;
@@ -122,70 +124,60 @@
         border-radius: 25px;
         background-color: rgba(255, 255, 255, 0.405);
       }
-      #out1 i,
+
+      #out i,
       span {
         color: rgb(0, 0, 0);
         font-family: "Itim", cursive;
       }
-      #out1 span {
+      #background img {
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 100%;
+        top: 0;
+      }
+      #out span {
         font-weight: 600;
+      }
+      @media (max-width: 970px) {
+      }
+      @media (max-width: 600px) {
       }
     </style>
   </head>
+
   <body>
-    <div id="login">
-      <form action="" method="dialog">
-        <h1>ĐĂNG Ký</h1>
-        <div id="name">
+    <div id="background">
+      <img src="images/login-image.png" alt="" />
+    </div>
+    <div id="log">
+      <form action="">
+        <h1>ĐĂNG NHẬP</h1>
+        <div id="text">
           <i class="bx bx-user-circle"></i>
           <input
             type="text"
-            name="name"
-            minlength="6"
+            name=""
+            id=""
             maxlength="18"
+            minlength="6"
             placeholder="Nhập tên của bạn"
           />
         </div>
 
-        <div id="email">
-          <label for="gmail"></label>
-          <i class="bx bxl-gmail"></i>
-          <input
-            type="email"
-            name="email"
-            id="gmail"
-            placeholder="Nhập email"
-          />
-        </div>
-
-        <div id="pass1">
-          <label for="password"></label>
-          <i class="bx bx-lock"></i>
-          <input
-            id="password"
-            type="password"
-            name="pass"
-            maxlength="18"
-            minlength="6"
-            placeholder="Tạo mật khẩu"
-          />
-        </div>
-        <div id="pass2">
-          <label for="confirm-password"></label>
+        <div id="pass">
           <i class="bx bx-lock-alt"></i>
           <input
             type="password"
             name=""
-            id="passworld"
+            id=""
             maxlength="18"
             minlength="6"
-            placeholder="Nhập lại mật khẩu"
+            placeholder="Nhập mật khẩu"
           />
         </div>
-        <div id="birth">
-          <i class="bx bx-face"></i>
-          <input type="date" id="birthday" name="birthday" />
-        </div>
+
         <div id="link">
           <a
             href="https://accounts.google.com/SignOutOptions?hl=vi&continue=https://myaccount.google.com/%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GBRAwAE"
@@ -207,15 +199,15 @@
         </div>
 
         <div id="sub">
-          <input type="submit" value="Đăng Kí" />
+          <input type="submit" value="Đăng Nhập" />
         </div>
 
         <div id="next">
-          <a href="login1.html"> <i class="bx bx-transfer-alt"></i></a>
+          <a href="register.html"><i class="bx bx-transfer-alt"></i></a>
         </div>
       </form>
     </div>
-    <div id="out1">
+    <div id="out">
       <a href="index.html"
         ><i class="bx bx-arrow-back"><span>back</span> </i></a
       >
