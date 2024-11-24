@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="a.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -21,27 +21,36 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
     <style>
       #main {
         position: relative;
       }
 
       #main img {
-        height: 900px;
+        min-width: 375px;
+        min-height: 370px;
+        margin-top: 106px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
       }
       .d-md-block {
-        font-size: 20px;
         background-color: rgb(255, 255, 255);
         bottom: 50px;
         color: black;
         border-radius: 30px;
-        width: 1000px;
+        height: 150px;
+        max-width: 1000px;
+      }
+      .d-md-block .sb1,
+      .sb2,
+      .sb3 {
+        flex-wrap: wrap;
       }
       .d-md-block .sb1 h1,
       .sb2 h1,
       .sb3 h1 {
         margin-top: -10px;
+        font-size: 30px;
       }
       .d-md-block .sb1 div,
       .sb2 div,
@@ -49,15 +58,16 @@
         display: flex;
         align-items: center;
       }
+
       .d-md-block .sb1 div i,
       .sb2 div i,
       .sb3 div i {
-        font-size: 50px;
+        font-size: 30px;
         margin: -10px 15px 0px 15px;
         color: rgb(178, 0, 0);
       }
       .d-md-block p {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 500;
         margin-top: 15px;
       }
@@ -68,8 +78,8 @@
         position: relative;
       }
       .d-md-block .cost i {
-        font-size: 40px;
-        margin: 0 20px;
+        font-size: 25px;
+        margin: 0 15px 0 20px;
         color: rgb(62, 149, 50);
       }
       .d-md-block .cost a {
@@ -79,30 +89,33 @@
         border-radius: 15px;
         position: absolute;
         right: 15px;
-        bottom: 0;
+        bottom: 15px;
         text-decoration: none;
-        padding: 10px;
         transition: all 0.3s;
       }
-      .d-md-block .cost:hover a {
+      .d-md-block .information:hover a {
         background-color: rgb(0, 0, 0);
-
         border: 2px solid white;
       }
-      .d-md-block .cost:hover a i {
+      .d-md-block .information:hover a i {
         color: rgb(255, 255, 255);
       }
-      .d-md-block .cost:hover a p {
+      .d-md-block .information:hover a p {
         color: rgb(255, 255, 255);
       }
       .d-md-block .cost a i {
-        color: black;
+        color: rgb(0, 0, 0);
         margin: 0 0 0 10px;
         font-size: 45px;
       }
       .d-md-block .cost a p {
         color: black;
         margin: 0 10px;
+      }
+      @media (max-width: 970px) {
+        #main img {
+          margin-top: 89px;
+        }
       }
     </style>
   </head>
@@ -112,13 +125,20 @@
         <h1>Travell</h1>
         <span>COLOR CYAN</span>
       </div>
-      <div class="wrapper">
+
+      <div id="wrapper">
         <div id="home">
+          <section class="search">
+            <div class="search1">
+              <i class="bx bx-search-alt"></i>
+              <input type="text" placeholder="Địa điểm" />
+
+              <button>Tìm kiếm</button>
+            </div>
+          </section>
+
           <a href=""
             ><i class="bx bx-home-alt"><span>trang chủ</span></i></a
-          >
-          <a href=""
-            ><i class="bx bx-info-circle"><span>giới thiệu</span></i></a
           >
           <a href=""
             ><i class="bx bxs-cart-add"><span>giỏ hàng</span></i></a
@@ -129,9 +149,32 @@
         </div>
 
         <div id="login">
-          <a href=""> <i class="bx bx-cog"></i></a>
           <a href="login2.html"><i class="bx bx-log-in"></i></a>
+
+          <button class="system">
+            <i class="bx bx-cog"></i>
+            <div class="sidebar">
+              <h1>ádasd</h1>
+            </div>
+          </button>
         </div>
+      </div>
+
+      <div id="menu">
+        <button class="menu1">
+          <i class="bx bx-menu"></i>
+          <div class="menu2">
+            <a href=""><i class="bx bx-home-alt"></i><span>trang chủ</span></a>
+            <a href=""><i class="bx bxs-cart-add"></i><span>giỏ hàng</span></a>
+            <a href="mes.html"
+              ><i class="bx bx-message-square-dots"></i><span>liên hệ</span></a
+            >
+            <a href="login2.html"
+              ><i class="bx bx-log-in"></i><span>đăng nhập</span></a
+            >
+            <a href=""> <i class="bx bx-cog"></i><span>cài đặt</span> </a>
+          </div>
+        </button>
       </div>
     </nav>
 
@@ -185,7 +228,7 @@
               <div class="cost">
                 <i class="bx bx-money-withdraw"></i>
                 <p>Giá vé : 8.300.000-24.600.000 VND/vé</p>
-                <div>
+                <div class="information">
                   <a href=""
                     ><i class="bx bx-info-circle"></i>
                     <p>thông tin</p></a
@@ -195,7 +238,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="opera-house-uc.jpg" class="d-block w-100" alt="" />
+            <img src="ảnh/opera-house-uc.jpg" class="d-block w-100" alt="" />
 
             <div class="carousel-caption d-none d-md-block">
               <div class="sb2">
@@ -211,7 +254,7 @@
               <div class="cost">
                 <i class="bx bx-money-withdraw"></i>
                 <p>Giá vé : 4.436.000-13.577.000±900.000 VNĐ/vé</p>
-                <div>
+                <div class="information">
                   <a href=""
                     ><i class="bx bx-info-circle"></i>
                     <p>thông tin</p></a
@@ -241,7 +284,7 @@
               <div class="cost">
                 <i class="bx bx-money-withdraw"></i>
                 <p>Giá vé : 1.7-4.6±0.4 tỉ VND</p>
-                <div>
+                <div class="information">
                   <a href=""
                     ><i class="bx bx-info-circle"></i>
                     <p>thông tin</p></a
@@ -323,7 +366,7 @@
         </div>
         <div class="hot3">
           <a href="saturnia.html"
-            ><img src="dia-diem-Saturnia.jpg" alt="" />
+            ><img src="ảnh/dia-diem-Saturnia.jpg" alt="" />
             <h2>Saturnia-Ý</h2>
             <div>
               <p>bán chạy</p>
@@ -351,5 +394,10 @@
         </div>
       </div>
     </div>
+
+    <div id="foot">
+      <h4>về Color Cyan</h4>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
