@@ -155,6 +155,7 @@ input {
 #main img {
   height: 500px;
   border-radius: 30px;
+  margin: 40px 0;
 }
 #main h1 {
   display: flex;
@@ -311,7 +312,7 @@ footer h4 {
     position: absolute;
     left: -190px;
     background-color: rgba(0, 0, 0, 0.525);
-    top: 70px;
+    top: 82px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     transition: all 0.4s;
