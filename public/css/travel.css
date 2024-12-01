@@ -139,45 +139,14 @@ input {
   margin: 0 5px;
 }
 
-#back {
-  font-size: 30px;
-  display: flex;
-  align-items: center;
+#main {
   position: absolute;
-  top: 140px;
-  left: 40px;
-  border: 2px solid black;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.405);
-  transition: all 0.3s;
-  position: fixed;
+  box-sizing: content-box;
 }
-#back i,
-span {
-  color: rgb(0, 0, 0);
-  font-family: "Itim", cursive;
-}
-#back span {
-  font-weight: 600;
-}
-#back:hover {
-  background-color: rgba(0, 0, 0, 0.405);
-  color: aliceblue;
-  border: 2px solid white;
-}
-#back:hover a i span {
-  color: aliceblue;
-}
-#back:hover a i {
-  color: aliceblue;
-}
-
 #main span {
-  flex-wrap: wrap;
   font-size: 30px;
-  display: flex;
-  justify-content: center;
+  margin: 10px 40px;
+  width: 100%;
 }
 #main div {
   display: flex;
@@ -194,6 +163,64 @@ span {
 }
 #menu {
   display: none;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  box-shadow: 0px 0px 15px;
+  padding-top: 40px;
+  width: 100%;
+}
+#foot1,
+#foot2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+#foot10,
+.foot211 {
+  display: flex;
+  align-items: center;
+}
+.foot211 p {
+  width: 300px;
+}
+.foot211 {
+  margin-right: -200px;
+}
+footer h4 {
+  font-family: "Great Vibes", cursive;
+  font-size: 35px;
+  margin-right: -35px;
+}
+#foot10 span,
+#foot21 .foot211 span {
+  font-family: "Caveat", cursive;
+  color: cyan;
+  font-size: 15px;
+}
+#foot20 {
+  margin-left: -170px;
+}
+#foot20 a i {
+  font-size: 30px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+#foot20 a:hover > i {
+  transform: scale(1.3, 1.3);
+  box-shadow: 0px 0px 7px;
+  border-radius: 10px;
+}
+#foot20 .fb {
+  color: rgb(13, 0, 255);
+}
+#foot20 .gm {
+  color: black;
+}
+#foot20 .ybt {
+  color: red;
 }
 
 @media (max-width: 970px) {
@@ -294,5 +321,29 @@ span {
   .menu3 {
     opacity: 1;
     margin-left: -5px;
+  }
+}
+@media (max-width: 737px) {
+  footer {
+    margin-top: 1150px;
+    flex-direction: column;
+  }
+  #foot21 {
+    display: flex;
+    justify-content: center;
+  }
+  .foot211 {
+    margin-top: 40px;
+  }
+  .foot211 h4,
+  .foot211 {
+    font-size: 25px;
+  }
+  .foot211 p,
+  .foot211 span {
+    font-size: 15px;
+  }
+  #foot20 {
+    margin-left: -555px;
   }
 }
