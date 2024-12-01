@@ -70,12 +70,22 @@ a:hover span {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   margin-left: 175px;
-  top: 77px;
+  top: 78px;
+  display: flex;
+  flex-direction: column;
 }
 .side {
   display: block;
   opacity: 1;
   margin-left: -225px;
+  display: flex;
+  flex-direction: column;
+}
+.side a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 40px;
+  font-family: "Caveat", cursive;
 }
 .search {
   position: relative;
