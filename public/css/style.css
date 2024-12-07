@@ -395,3 +395,20 @@ footer span {
     font-size: 15px;
   }
 }
+
+.l1 {
+  background-color: black;
+  color: aliceblue;
+}
+.light {
+  display: none;
+}
+.light1 {
+  display: block;
+}
+.dark {
+  display: block;
+}
+.dark1 {
+  display: none;
+}
