@@ -43,7 +43,7 @@ span {
 }
 #wrapper i:hover,
 a:hover span {
-  color: black;
+  color: rgb(141, 234, 255);
 }
 
 #wrapper .search1 button {
@@ -169,7 +169,7 @@ input {
 }
 .hot2 .hot3 {
   border: 2px solid black;
-  border-radius: 25px;
+  border-radius: 27px;
   background: linear-gradient(rgb(173, 248, 255), rgb(255, 255, 255));
   transition: all 0.3s;
   position: relative;
@@ -202,6 +202,7 @@ input {
   background-color: aliceblue;
   margin: 10px 5px 0 5px;
   padding: 0 5px;
+  color: rgb(0, 0, 0);
 }
 .hot3 .cost p {
   font-weight: 640;
@@ -260,7 +261,7 @@ footer span {
   border-radius: 10px;
 }
 #foot20 .fb {
-  color: rgb(13, 0, 255);
+  color: rgb(0, 89, 255);
 }
 #foot20 .gm {
   color: black;
@@ -398,7 +399,33 @@ footer span {
 
 .l1 {
   background-color: black;
-  color: aliceblue;
+}
+.l1 nav {
+  background-color: rgba(153, 153, 153, 0.525);
+}
+.l1 .sidebar {
+  background-color: rgba(153, 153, 153, 0.525);
+}
+.l1 .hot1 {
+  color: rgb(255, 255, 255);
+}
+
+.l1 .hot3:hover {
+  box-shadow: 0px 0px 15px white;
+}
+
+.l1 footer h4 {
+  color: rgb(255, 255, 255);
+}
+.l1 footer p {
+  color: rgb(255, 255, 255);
+}
+.l1 footer {
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.l1 #foot20 .gm {
+  color: rgb(255, 254, 254);
 }
 .light {
   display: none;

@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 nav {
   background-color: rgba(0, 0, 0, 0.525);
   display: flex;
@@ -45,7 +46,7 @@ a span {
 }
 #wrapper i:hover,
 a:hover span {
-  color: black;
+  color: rgb(141, 234, 255);
 }
 
 #wrapper .search1 button {
@@ -151,7 +152,7 @@ input {
 
 #main {
   position: absolute;
-  box-sizing: content-box;
+  flex-wrap: wrap;
 }
 #main span {
   font-size: 30px;
@@ -225,7 +226,7 @@ footer h4 {
   border-radius: 10px;
 }
 #foot20 .fb {
-  color: rgb(13, 0, 255);
+  color: rgb(0, 89, 255);
 }
 #foot20 .gm {
   color: black;
@@ -233,8 +234,15 @@ footer h4 {
 #foot20 .ybt {
   color: red;
 }
-
+@media (max-width: 1502px) {
+  nav {
+    width: 90%;
+  }
+}
 @media (max-width: 970px) {
+  nav {
+    width: 90%;
+  }
   #logo {
     margin-left: 10px;
   }
@@ -335,6 +343,14 @@ footer h4 {
   }
 }
 @media (max-width: 737px) {
+  nav {
+    width: 90%;
+  }
+  #main img {
+    height: 230px;
+    border-radius: 30px;
+    margin: 0;
+  }
   footer {
     margin-top: 1150px;
     flex-direction: column;
@@ -357,4 +373,49 @@ footer h4 {
   #foot20 {
     margin-left: -555px;
   }
+}
+
+.l1 {
+  background-color: black;
+}
+
+.l1 nav {
+  background-color: rgba(153, 153, 153, 0.525);
+}
+.l1 .sidebar {
+  background-color: rgba(153, 153, 153, 0.525);
+}
+.l1 #main span,
+.l1 #main h1 {
+  color: aliceblue;
+}
+
+.l1 footer h4 {
+  color: rgb(255, 255, 255);
+}
+.l1 footer p {
+  color: rgb(255, 255, 255);
+}
+.l1 #foot10 span,
+#foot21 .foot211 span {
+  color: cyan;
+}
+.l1 footer {
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.l1 #foot20 .gm {
+  color: rgb(255, 254, 254);
+}
+.light {
+  display: none;
+}
+.light1 {
+  display: block;
+}
+.dark {
+  display: block;
+}
+.dark1 {
+  display: none;
 }
