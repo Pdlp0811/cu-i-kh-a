@@ -12,13 +12,11 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Updock&display=swap");
-
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-
       nav {
         background-color: rgba(0, 0, 0, 0.525);
         display: flex;
@@ -57,7 +55,7 @@
       }
       #wrapper i:hover,
       a:hover span {
-        color: black;
+        color: rgb(141, 234, 255);
       }
 
       #wrapper .search1 button {
@@ -71,24 +69,10 @@
       #login {
         position: relative;
       }
-      .sidebar {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.525);
-        color: rgb(255, 255, 255);
-        width: 300px;
-        height: 200px;
-        opacity: 0;
-        transition: all 0.4s;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        margin-left: 175px;
-        top: 70px;
+      .system {
+        margin-right: 0px;
       }
-      .side {
-        display: block;
-        opacity: 1;
-        margin-left: -225px;
-      }
+
       .search {
         position: relative;
       }
@@ -125,12 +109,12 @@
       #home a,
       #login i {
         color: rgb(255, 255, 255);
-        font-size: 35px;
+        font-size: 30px;
+        text-decoration: none;
       }
-      #home a i span,
-      #login a i span {
+      #home a i span {
         font-family: "Caveat", cursive;
-        font-size: 45px;
+        font-size: 35px;
       }
 
       #home {
@@ -140,7 +124,7 @@
         justify-content: center;
       }
       #home span {
-        margin-right: 55px;
+        margin-right: 40px;
       }
 
       #login {
@@ -209,7 +193,7 @@
         height: 100%;
         top: 0;
       }
-      @media (max-width: 970px) {
+      @media (max-width: 1090px) {
         body {
           background-image: none;
         }
@@ -345,6 +329,20 @@
           padding: 15px 50px;
         }
       }
+      .light {
+        display: none;
+      }
+
+      .dark {
+        display: none;
+      }
+
+      .dark2 {
+        display: block;
+      }
+      .light2 {
+        display: block;
+      }
     </style>
   </head>
 
@@ -376,25 +374,27 @@
           <a href="mes.html"
             ><i class="bx bx-message-square-dots"><span>liên hệ</span></i></a
           >
+          <a href="index.html">
+            <i class="bx bx-log-out"><span>đăng xuất</span></i>
+          </a>
+
+          <a href="register.html"
+            ><i class="bx bx-log-in"><span>đăng nhập</span></i></a
+          >
         </div>
 
-        <div id="login">
+        <div id="login" class="login-container">
           <button class="system">
             <i class="bx bx-cog"></i>
             <div class="sidebar">
-              <a href="index.html">
-                <i class="bx bx-log-out"></i><span>Đăng xuất</span>
-              </a>
-              <a href="register.html"
-                ><i class="bx bx-log-in"></i><span>Đăng nhập</span></a
-              >
-
-              <button class="dark">
-                <i class="bx bx-sun"></i>
-              </button>
-              <button class="light">
-                <i class="bx bx-moon"></i>
-              </button>
+              <div class="dark-light">
+                <button class="dark">
+                  <i class="bx bx-moon"></i>
+                </button>
+                <button class="light">
+                  <i class="bx bx-sun"></i>
+                </button>
+              </div>
             </div>
           </button>
         </div>
@@ -407,16 +407,17 @@
             <a href="index.html"
               ><i class="bx bx-home-alt"><span>trang chủ</span></i></a
             >
-
             <a href="mes.html"
               ><i class="bx bx-message-square-dots"></i><span>liên hệ</span></a
             >
             <a href="register.html"
-              ><i class="bx bx-log-in"></i><span>đăng nhập</span></a
-            ><a href="index.html">
+              ><i class="bx bx-log-in"><span>đăng nhập</span></i></a
+            >
+            <a href="index.html">
               <i class="bx bx-log-out"><span>đăng xuất</span></i>
             </a>
-            <a href=""> <i class="bx bx-cog"></i><span>cài đặt</span> </a>
+
+            <a href=""> <i class="bx bx-cog"></i><span>cài đặt</span></a>
           </div>
         </button>
       </div>

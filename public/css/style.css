@@ -57,34 +57,10 @@ a:hover span {
 #login {
   position: relative;
 }
-.sidebar {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.525);
-  color: rgb(255, 255, 255);
-  width: 300px;
-  height: 200px;
-  opacity: 0;
-  transition: all 0.4s;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  margin-left: 175px;
-  top: 78px;
-  display: flex;
-  flex-direction: column;
+.system {
+  margin-right: 0px;
 }
-.side {
-  display: block;
-  opacity: 1;
-  margin-left: -225px;
-  display: flex;
-  flex-direction: column;
-}
-.side a {
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 40px;
-  font-family: "Caveat", cursive;
-}
+
 .search {
   position: relative;
 }
@@ -121,12 +97,12 @@ input {
 #home a,
 #login i {
   color: rgb(255, 255, 255);
-  font-size: 35px;
+  font-size: 30px;
+  text-decoration: none;
 }
-#home a i span,
-#login a i span {
+#home a i span {
   font-family: "Caveat", cursive;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 #home {
@@ -136,7 +112,7 @@ input {
   justify-content: center;
 }
 #home span {
-  margin-right: 55px;
+  margin-right: 40px;
 }
 
 #login {
@@ -275,7 +251,7 @@ footer span {
     margin-top: 600px;
   }
 }
-@media (max-width: 970px) {
+@media (max-width: 1090px) {
   #logo {
     margin-left: 10px;
   }
@@ -430,12 +406,14 @@ footer span {
 .light {
   display: none;
 }
-.light1 {
-  display: block;
-}
+
 .dark {
+  display: none;
+}
+
+.dark2 {
   display: block;
 }
-.dark1 {
-  display: none;
+.light2 {
+  display: block;
 }
