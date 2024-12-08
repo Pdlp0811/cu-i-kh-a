@@ -209,12 +209,12 @@ footer h4 {
 }
 @media (max-width: 1502px) {
   nav {
-    width: 90%;
+    width: 100%;
   }
 }
-@media (max-width: 970px) {
+@media (max-width: 1090px) {
   nav {
-    width: 90%;
+    width: 100%;
   }
   #logo {
     margin-left: 10px;
@@ -317,7 +317,7 @@ footer h4 {
 }
 @media (max-width: 737px) {
   nav {
-    width: 90%;
+    width: 95%;
   }
   #main img {
     height: 230px;
